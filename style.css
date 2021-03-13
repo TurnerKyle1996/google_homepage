@@ -1,20 +1,26 @@
 body {
     text-align: center;
+    margin: 0;
 }
-
-.SearchButton {
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
+header {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    word-spacing: 7px;
+    font-size: 13px
 }
-
+header span:hover, footer span:hover {
+    text-decoration: underline;
+}
+.HeaderTextLeft {
+    padding: 0 0 0 10px;
+}
+.HeaderTextRight {
+    padding: 0 10px 0 0;
+}
 #SearchBar {
+    margin-top: 10px;
     font-family: arial,sans-serif;
     font-size: 18px;
     height: 35px;
@@ -26,9 +32,50 @@ body {
     color:rgba(0,0,0,.87);
     outline: none;
 }
-
 #SearchBar:hover {
     background-color: #fff;
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
     border-color: rgba(223,225,229,0);
+}
+.SearchButton {
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    color:rgba(0,0,0,.87);
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #dfe1e5;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    word-spacing: 7px;
+    font-size: 13px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+}
+#Advertising {
+    flex: 1;
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+#CarbonNeutral {
+    flex: 1;
+    text-align: center;
+}
+#Privacy {
+    flex: 1;
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+#HowSearchWorks {
+    word-spacing: 0px;
 }
